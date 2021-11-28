@@ -30,7 +30,7 @@ client.on("ready", async () => {
         handler.addCommand(command);
     }
   }
-
+  
   console.log("Ceira está ON!")
 });
 

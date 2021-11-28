@@ -1,4 +1,4 @@
-const { gifs } = require("../../arquivos/gifs.json");
+const { gifs } = require("../../arquivos/json/gifs.json");
 
 module.exports = {
     name: "rasputia",

@@ -1,4 +1,4 @@
-const { piadas } = require("../../arquivos/piadas.json")
+const { piadas } = require("../../arquivos/json/piadas.json")
 
 module.exports = {
     name: "piadas",
