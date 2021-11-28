@@ -1,0 +1,18 @@
+{
+  "name": "ceira-bot",
+  "version": "1.0.0",
+  "description": "enceirado com baidu ",
+  "main": "index.js",
+  "scripts": {
+    "test": "start",
+    "start": "node ."
+  },
+  "author": "Felpszadaa",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.3.1",
+    "mathjs": "^10.0.0",
+    "nodemon": "^2.0.15",
+    "wax-command-handler": "^2.0.3"
+  }
+}
