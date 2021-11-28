@@ -5,8 +5,8 @@ module.exports = {
     name: "wiki",
     description: "Pesquisa sobre algo na wiki",
     aliases: [ "w", "buscar", "busca", "search", "wikipedia" ],
-    usage: "w Slondo",
-    cooldown: 3,
+    usage: "w ceira",
+    cooldown: 1,
     permissions: [ "SEND_MESSAGES" ],
     execute(client, message, args) {
 
