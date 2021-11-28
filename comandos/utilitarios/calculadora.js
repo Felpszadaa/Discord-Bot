@@ -10,6 +10,10 @@ module.exports = {
     execute(client, message, args){
 
         if(args.length < 1) return message.reply("Informe alguma operação");
+        
+        for(let i = 0; i < args.length; i++)
+            if(!isNaN(parseFloat(args[i])))
+                args[i] = args[i].toString().replaceAll(",", ".");
 
         let operacao = args.join(" ");
         

@@ -4,7 +4,7 @@
   "description": "enceirado com baidu ",
   "main": "index.js",
   "scripts": {
-    "test": "start",
+    "test": "nodemon test",
     "start": "node ."
   },
   "author": "Felpszadaa",

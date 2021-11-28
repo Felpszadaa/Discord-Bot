@@ -1,7 +1,7 @@
 const { readdirSync } = require("fs");
 const handler = require("wax-command-handler");
 const { Client, Intents, MessageEmbed } = require("discord.js");
-const { token, prefix } = require("./config.json");
+const { token, token_2, prefix } = require("./config.json");
 const client = new Client({
   intents: [
     Intents.FLAGS.GUILDS,
@@ -11,6 +11,10 @@ const client = new Client({
     Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
   ],
 });
+
+String.prototype.replaceAll = String.prototype.replaceAll || function(needle, replacement) {
+  return this.split(needle).join(replacement);
+};
 
 const commandConfig = new handler.CommandConfig(
   client,
@@ -72,4 +76,5 @@ handler.events.on("command_error", async e => {
     client.channels.cache.get('913245286573416518').send({ embeds: [embed] })
 })
 
-client.login(token)
+client.login(token);
+// client.login(token_2);
