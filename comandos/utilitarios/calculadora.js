@@ -31,7 +31,7 @@ module.exports = {
                 emoji_res = ":chart_with_downwards_trend:";
             
             if(!isInteger(resultado))
-                resultado = resultado.toFixed(6)
+                resultado = resultado.toFixed(2)
 
             message.reply(`${emoji_res} | Resultado: \`${resultado.toLocaleString('pt-BR')}\``);
         }catch(err){
